@@ -405,7 +405,6 @@ body {
 
 .footer .container {
     display: flex;
-    gap: 120px;
 }
 
 .footer-text {
@@ -426,6 +425,10 @@ body {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
+}
+
+.footer-social-container {
+    margin-left: 120px;
 }
 
 .footer-list {
@@ -455,6 +458,72 @@ body {
 .footer-link:hover,
 .footer-link:focus {
     background-color: rgb(49, 208, 170);
+}
+
+
+/* -----Footer form----- */
+
+.footer-form-container {
+    margin-left: 80px;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-form-input {
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--secondary-text-color);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.footer-form-input:is(:hover, :focus) {
+    border: 1px solid var(--logo-btn-color);
+}
+
+.footer-form-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.footer-form-input:is(:hover, :focus)::placeholder {
+    color: var(--logo-btn-color);
+}
+
+.footer-form-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    padding: 8px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: var(--logo-btn-color);
+    color: var(--secondary-text-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-btn:is(:hover, :focus) {
+    background-color: var(--hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-form-icon {
+    margin-left: 16px;
+    fill: currentColor;
 }
 
 
