@@ -386,6 +386,50 @@
 						<use href="./images/symbol-defs.svg#icon-close"></use>
 					</svg>
 				</button>
+
+            <!-- Modal form -->
+            <h2 class="modal-title">Leave your contacts and we will call you back</h2>
+            <form class="modal-form">
+                <div class="modal-form-group">
+                    <label for="name" class="modal-form-label">Name</label>
+                    <input type="text" name="username" id="name" class="modal-form-input" />
+                    <svg class="modal-form-icon" width="12" height="12">
+							<use href="./images/icons.svg#icon-person"></use>
+						</svg>
+                </div>
+                <div class="modal-form-group">
+                    <label for="tel" class="modal-form-label">Phone</label>
+                    <input type="tel" name="tel" id="tel" class="modal-form-input" />
+                    <svg class="modal-form-icon" width="13" height="13">
+							<use href="./images/icons.svg#icon-phone"></use>
+						</svg>
+                </div>
+                <div class="modal-form-group">
+                    <label for="email" class="modal-form-label">Email</label>
+                    <input type="email" name="email" id="email" class="modal-form-input" />
+                    <svg class="modal-form-icon" width="15" height="12">
+							<use href="./images/icons.svg#icon-mail"></use>
+						</svg>
+                </div>
+                <div class="modal-form-group">
+                    <label for="comment" class="modal-form-label">Comment</label>
+                    <textarea name="comment" id="comment" placeholder="Text input" class="modal-form-input textarea"></textarea>
+                </div>
+                <div class="modal-form-checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox" class="modal-form-checkbox-input visually-hidden" />
+                    <label for="checkbox" class="modal-form-checkbox-label">
+							<span>
+								<svg class="modal-form-checkbox-icon" width="10" height="8">
+									<use href="./images/icons.svg#icon-click"></use>
+								</svg>
+							</span>
+							I accept the terms and conditions of the
+							<a href="/" class="modal-form-checkbox-label-link">Privacy Policy</a>
+						</label>
+                </div>
+                <button type="submit" class="modal-form-btn">Send</button>
+            </form>
+            <!-- /Modal form -->
         </div>
     </div>
     <!-- /Modal -->
