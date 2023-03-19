@@ -485,7 +485,7 @@ body {
 }
 
 .footer-form-input:is(:hover, :focus) {
-    border: 1px solid var(--logo-btn-color);
+    border-color: var(--logo-btn-color);
 }
 
 .footer-form-input::placeholder {
@@ -651,7 +651,7 @@ body {
 
 .modal-window {
     width: 408px;
-    min-height: 576px;
+    height: 584px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -659,14 +659,16 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 24px;
+    padding: 76px 24px 20px;
 }
 
 .modal-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
+    position: absolute;
+    top: 28px;
+    right: 24px;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -692,7 +694,6 @@ body {
     font-weight: 500;
     font-size: 16px;
     text-align: center;
-    margin-top: 24px;
     margin-bottom: 16px;
     color: var(--main-color);
 }
@@ -703,6 +704,8 @@ body {
 }
 
 .modal-form-label {
+    display: block;
+    margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
@@ -720,12 +723,12 @@ body {
 }
 
 .modal-form-input:is(:hover, :focus) {
-    border: 1px solid var(--logo-btn-color);
+    border-color: var(--logo-btn-color);
 }
 
 .modal-form-icon {
     position: absolute;
-    top: 44px;
+    top: 40px;
     left: 19px;
     transform: translateY(-50%);
     fill: var(--main-color);
@@ -736,7 +739,12 @@ body {
     fill: var(--logo-btn-color);
 }
 
+.modal-textarea {
+    margin-bottom: 16px;
+}
+
 .textarea {
+    display: block;
     height: 120px;
     padding: 8px 16px;
     resize: none;
@@ -772,6 +780,7 @@ body {
     border: 1.25px solid var(--main-color);
     border-radius: 2px;
     color: #fcfcfc;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-checkbox-icon {
@@ -781,12 +790,7 @@ body {
 .modal-form-checkbox-input:checked+.modal-form-checkbox-label span {
     border: none;
     background-color: var(--hover-color);
-}
-
-.modal-form-checkbox-input:focus+.modal-form-checkbox-label span {
-    outline: 1.5px solid var(--hover-color);
-    border: none;
-    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: var(--hover-color);
 }
 
 .modal-form-checkbox-label-link {
